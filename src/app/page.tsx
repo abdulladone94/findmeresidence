@@ -4,7 +4,10 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen sm:px-[90px] bg-gradient-to-br via-teal-400 from-blue-400 ">
+    <main
+      className="flex flex-col min-h-screen sm:px-[90px]"
+      style={{ background: "linear-gradient(to right, #15B7AA, #247290 100%)" }}
+    >
       <div className="flex justify-between mr-1">
         <Image
           src={logo}
@@ -14,7 +17,7 @@ export default function Home() {
           className="max-w-[300px] md :max-w-full"
         />
         <div className="flex items-center space-x-4">
-          <a
+          {/* <a
             href="https://www.facebook.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -26,20 +29,27 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaInstagram className="w-6 h-6 text-white hover:text-blue-400" />
-          </a>
+            <FaTwitter className="w-6 h-6 text-white hover:text-blue-400" />
+          </a> */}
+          <span className="hidden lg:block text-[#dbc048]">
+            Best way to reach us,
+            <br /> we have great content regularly{" "}
+          </span>
           <a
-            href="https://www.instagram.com/"
+            href="https://instagram.com/findmeresidence?igshid=MzRlODBiNWFlZA=="
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaTwitter className="w-6 h-6 text-white hover:text-blue-400" />
+            <FaInstagram className="w-10 h-10 text-white hover:text-blue-400" />
           </a>
         </div>
       </div>
       <div className="px-5 text-white sm:px-16 lg:px-28">
-        <h1 className="text-4xl lg:text-5xl">
-          We are open for business, its just our web is not ready yet
+        <h1 className="text-4xl font-black lg:text-5xl">
+          We are open for business, <br />
+          <span className="text-[#bdbdbd]">
+            its just our web is not ready yet
+          </span>
         </h1>
         <div className="mt-10 text-xl">
           <p>
