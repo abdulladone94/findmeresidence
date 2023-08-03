@@ -5,19 +5,11 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 export default function Home() {
   return (
     <main
-      className="flex flex-col min-h-screen sm:px-[90px]"
+      className="flex flex-col min-h-screen px-5 py-6 sm:px-16 lg:px-28"
       style={{ background: "linear-gradient(to right, #15B7AA, #247290 100%)" }}
     >
-      <div className="flex justify-between mr-1">
-        <Image
-          src={logo}
-          alt="logo"
-          width={500}
-          height={500}
-          className="max-w-[300px] md :max-w-full"
-        />
-        <div className="flex items-center space-x-4">
-          {/* <a
+      <div className="flex items-center justify-end space-x-4">
+        {/* <a
             href="https://www.facebook.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -31,27 +23,36 @@ export default function Home() {
           >
             <FaTwitter className="w-6 h-6 text-white hover:text-blue-400" />
           </a> */}
-          <span className="hidden lg:block text-[#dbc048]">
-            Best way to reach us,
-            <br /> we have great content regularly{" "}
-          </span>
-          <a
-            href="https://instagram.com/findmeresidence?igshid=MzRlODBiNWFlZA=="
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaInstagram className="w-10 h-10 text-white hover:text-blue-400" />
-          </a>
-        </div>
+        <span className="text-[12px] sm:text-sm text-[#dbc048]">
+          Best way to reach us,
+          <br /> we have great content regularly{" "}
+        </span>
+        <a
+          href="https://instagram.com/findmeresidence?igshid=MzRlODBiNWFlZA=="
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaInstagram className="w-10 h-10 text-white hover:text-blue-400" />
+        </a>
       </div>
-      <div className="px-5 text-white sm:px-16 lg:px-28">
-        <h1 className="text-4xl font-black lg:text-5xl">
+      <div className="mx-0">
+        <Image
+          src={logo}
+          alt="logo"
+          width={500}
+          height={500}
+          className="max-w-[300px] md :max-w-full ml-[-16px]"
+        />
+      </div>
+
+      <div className="ml-6 text-white sm:ml-12">
+        <h1 className="text-xl font-black sm:text-3xl lg:text-5xl">
           We are open for business, <br />
           <span className="text-[#bdbdbd]">
             its just our web is not ready yet
           </span>
         </h1>
-        <div className="mt-10 text-xl">
+        <div className="mt-10 text-lg sm:text-xl">
           <p>
             We are a marketplace for buyers and sellers in real estate. We are
             uniques and one of a kind startup in the industry. <br /> So our
