@@ -55,10 +55,10 @@ export default function Home() {
         <div className="mt-10 text-lg sm:text-xl">
           <p>
             We are a marketplace for buyers and sellers in real estate. We are
-            uniques and one of a kind startup in the industry. <br /> So our
-            founders believe the interaction with you in first hand is a great
-            first step to build absolutely phenomenal a human like tech, so no
-            one will feel that have not been served.
+            unique and one of a kind startup in the industry. Our founders
+            believe the interaction with you in first hand is a great first step
+            to build absolutely phenomenal a human like tech, so no one will
+            feel that they have not been served.
             <br /> Until we get our platform up and running, you can reach us
             through our socials, we can still sell your real estate way faster.
           </p>
