@@ -1,6 +1,7 @@
 import Image from "next/image";
 import logo from "../../public/findMeResidenceLogo1.png";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -8,6 +9,9 @@ export default function Home() {
       className="flex flex-col min-h-screen px-5 py-6 sm:px-16 lg:px-28"
       style={{ background: "linear-gradient(to right, #15B7AA, #247290 100%)" }}
     >
+      <Head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </Head>
       <div className="flex items-center justify-end space-x-4">
         {/* <a
             href="https://www.facebook.com/"
@@ -55,10 +59,10 @@ export default function Home() {
         <div className="mt-10 text-lg sm:text-xl">
           <p>
             We are a marketplace for buyers and sellers in real estate. We are
-            unique and one of a kind startup in the industry. Our founders
-            believe the interaction with you in first hand is a great first step
-            to build absolutely phenomenal a human like tech, so no one will
-            feel that they have not been served.
+            unique and one of a kind startup in the industry.
+            <br /> Our founders believe the interaction with you in first hand
+            is a great first step to build absolutely phenomenal a human like
+            tech, so no one will feel that they have not been served.
             <br /> Until we get our platform up and running, you can reach us
             through our socials, we can still sell your real estate way faster.
           </p>
